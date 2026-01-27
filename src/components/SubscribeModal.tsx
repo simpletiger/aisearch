@@ -56,16 +56,6 @@ export default function SubscribeModal({ isOpen, onClose }: SubscribeModalProps)
                 </svg>
               </button>
 
-              {/* Header */}
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  Stay Ahead of the Shift
-                </h3>
-                <p className="text-zinc-400 text-sm">
-                  Get monthly AI search insights delivered to your inbox. No spam, just data.
-                </p>
-              </div>
-
               {/* HubSpot Form Container */}
               <div 
                 className="hs-form-frame hubspot-form-container" 
@@ -73,11 +63,6 @@ export default function SubscribeModal({ isOpen, onClose }: SubscribeModalProps)
                 data-form-id="17388829-1101-4ce2-a09b-c97ae0c9e17f" 
                 data-portal-id="20896464"
               />
-
-              {/* Footer note */}
-              <p className="text-xs text-zinc-600 text-center mt-4">
-                Unsubscribe anytime. We respect your inbox.
-              </p>
             </div>
           </motion.div>
         </>
