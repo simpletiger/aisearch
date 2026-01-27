@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const links = [
   { label: "Stats", href: "#stats" },
@@ -33,9 +34,9 @@ export default function Nav() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="#" className="text-sm font-bold font-mono gradient-text">
-            AI SEARCH REPORT
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-center gap-8">
+          <a href="#" className="flex-shrink-0">
+            <Image src="/logo.png" alt="SimpleTiger" width={140} height={28} className="h-6 w-auto" />
           </a>
 
           {/* Desktop links */}

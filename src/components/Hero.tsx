@@ -6,8 +6,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg">
       {/* Ambient glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-indigo-500/5 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-cyan-500/5 blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-orange-500/5 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-amber-500/5 blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <motion.div
@@ -15,7 +15,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-sm font-mono tracking-widest uppercase text-indigo-400 mb-6">
+          <p className="text-sm font-mono tracking-widest uppercase text-orange-400 mb-6">
             Data Journalism · January 2026
           </p>
 
@@ -38,15 +38,15 @@ export default function Hero() {
             className="flex flex-wrap justify-center gap-6 text-sm font-mono text-zinc-500"
           >
             <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
               800M ChatGPT users
             </span>
             <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-violet-500 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
               17% of all queries
             </span>
             <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse" />
               $20B OpenAI revenue
             </span>
           </motion.div>
@@ -55,12 +55,19 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.8 }}
-          className="mt-16"
+          transition={{ delay: 1.0, duration: 0.8 }}
+          className="mt-12 flex flex-col items-center gap-6"
         >
           <a
+            href="#subscribe"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold text-sm hover:from-orange-400 hover:to-amber-400 transition-all shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30"
+          >
+            Subscribe for Updates
+          </a>
+
+          <a
             href="#stats"
-            className="inline-flex items-center gap-2 text-zinc-500 hover:text-indigo-400 transition-colors text-sm"
+            className="inline-flex items-center gap-2 text-zinc-500 hover:text-orange-400 transition-colors text-sm"
           >
             <span>Scroll to explore</span>
             <motion.span
