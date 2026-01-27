@@ -19,7 +19,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
-        <script src="https://js.hsforms.net/forms/embed/developer/20896464.js" defer></script>
+        <script src="https://js.hsforms.net/forms/embed/20896464.js" defer></script>
       </head>
       <body className="antialiased">{children}</body>
     </html>

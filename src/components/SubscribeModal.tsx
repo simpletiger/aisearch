@@ -98,7 +98,7 @@ export default function SubscribeModal({ isOpen, onClose }: SubscribeModalProps)
               {/* HubSpot Form Container */}
               <div 
                 ref={formRef}
-                className="hs-form-html hubspot-form-container" 
+                className="hs-form-frame hubspot-form-container" 
                 data-region="na1" 
                 data-form-id="17388829-1101-4ce2-a09b-c97ae0c9e17f" 
                 data-portal-id="20896464"
