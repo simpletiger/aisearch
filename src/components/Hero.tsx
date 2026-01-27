@@ -1,8 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
+import SubscribeModal from "./SubscribeModal";
 
 export default function Hero() {
+  const [showSubscribe, setShowSubscribe] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg">
       {/* Ambient glow */}
@@ -58,12 +62,12 @@ export default function Hero() {
           transition={{ delay: 1.0, duration: 0.8 }}
           className="mt-12 flex flex-col items-center gap-6"
         >
-          <a
-            href="#subscribe"
-            className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold text-sm hover:from-orange-400 hover:to-amber-400 transition-all shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30"
+          <button
+            onClick={() => setShowSubscribe(true)}
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold text-sm hover:from-orange-400 hover:to-amber-400 transition-all shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 cursor-pointer"
           >
             Subscribe for Updates
-          </a>
+          </button>
 
           <a
             href="#stats"
@@ -79,6 +83,11 @@ export default function Hero() {
           </a>
         </motion.div>
       </div>
+
+      <SubscribeModal 
+        isOpen={showSubscribe} 
+        onClose={() => setShowSubscribe(false)} 
+      />
     </section>
   );
 }
