@@ -5,8 +5,8 @@ import { keyStats } from "@/data";
 
 export default function KeyStats() {
   return (
-    <section id="stats" className="py-32 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="stats" className="py-40">
+      <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -34,7 +34,7 @@ export default function Nav() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-center gap-8">
+        <div className="section-container h-16 flex items-center justify-center gap-8">
           <a href="#" className="flex-shrink-0">
             <Image src="/logo.png" alt="SimpleTiger" width={140} height={28} className="h-6 w-auto" />
           </a>

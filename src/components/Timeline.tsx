@@ -5,8 +5,8 @@ import { timelineEvents } from "@/data";
 
 export default function Timeline() {
   return (
-    <section className="py-32 px-6">
-      <div className="max-w-5xl mx-auto">
+    <section className="py-40">
+      <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

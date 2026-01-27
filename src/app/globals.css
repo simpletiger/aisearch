@@ -15,10 +15,30 @@
   --color-border: #27272a;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+}
+
+/* Section container for consistent centering */
+.section-container {
+  width: 100%;
+  max-width: 72rem; /* 1152px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1536px) {
+  .section-container {
+    max-width: 80rem; /* 1280px on 2xl screens */
+  }
+}
+
+@media (min-width: 1920px) {
+  .section-container {
+    max-width: 90rem; /* 1440px on ultrawide */
+  }
 }
 
 html {

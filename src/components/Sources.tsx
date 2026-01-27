@@ -5,8 +5,8 @@ import { sources } from "@/data";
 
 export default function Sources() {
   return (
-    <section className="py-32 px-6 bg-[#08080d]">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-40 bg-[#08080d]">
+      <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
