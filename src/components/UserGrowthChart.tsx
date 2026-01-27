@@ -31,19 +31,19 @@ const CustomTooltip = ({ active, payload, label }: { active?: boolean; payload?:
 
 export default function UserGrowthChart() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-12 text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="gradient-text">User Growth</span> Across Platforms
           </h2>
-          <p className="text-zinc-400 max-w-2xl">
+          <p className="text-zinc-400 max-w-2xl mx-auto">
             Monthly active users (millions) for the major AI search platforms.
             ChatGPT leads but Gemini is closing the gap fast with 650M total users
             by late 2025.

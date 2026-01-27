@@ -33,19 +33,19 @@ const CustomTooltip = ({ active, payload, label }: { active?: boolean; payload?:
 
 export default function MarketShareChart() {
   return (
-    <section className="py-24 px-6 bg-[#08080d]">
+    <section className="py-32 px-6 bg-[#08080d]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-12 text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="gradient-text">Market Share</span> — Google&apos;s Grip Loosens
           </h2>
-          <p className="text-zinc-400 max-w-2xl">
+          <p className="text-zinc-400 max-w-2xl mx-auto">
             Google&apos;s search market share fell below 90% for the first time since 2015
             in Q4 2024. By Q4 2025, ChatGPT alone commands 17% of all digital queries.
           </p>

@@ -31,19 +31,19 @@ const CustomTooltip = ({ active, payload, label }: { active?: boolean; payload?:
 
 export default function RevenueChart() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-12 text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             The <span className="gradient-text">Money</span> Behind AI Search
           </h2>
-          <p className="text-zinc-400 max-w-2xl">
+          <p className="text-zinc-400 max-w-2xl mx-auto">
             Annual recurring revenue (in billions). OpenAI went from $1B to $20B in just
             two years. Anthropic&apos;s run-rate hit $5B+ by August 2025.
           </p>

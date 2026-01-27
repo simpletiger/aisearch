@@ -5,20 +5,20 @@ import { keyStats } from "@/data";
 
 export default function KeyStats() {
   return (
-    <section id="stats" className="py-24 px-6">
+    <section id="stats" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-16 text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             The Numbers That{" "}
             <span className="gradient-text">Define the Shift</span>
           </h2>
-          <p className="text-zinc-400 max-w-2xl">
+          <p className="text-zinc-400 max-w-2xl mx-auto">
             Key statistics that capture the scale and speed of AI search&apos;s
             rise as of late 2025.
           </p>

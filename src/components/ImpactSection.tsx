@@ -63,20 +63,20 @@ export default function ImpactSection() {
   ];
 
   return (
-    <section className="py-24 px-6 bg-[#08080d]">
+    <section className="py-32 px-6 bg-[#08080d]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-12 text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Impact on{" "}
             <span className="gradient-text">Traditional Search</span>
           </h2>
-          <p className="text-zinc-400 max-w-2xl">
+          <p className="text-zinc-400 max-w-2xl mx-auto">
             The rise of AI search isn&apos;t just adding new options — it&apos;s actively
             cannibalizing traditional search traffic. Publishers and businesses are
             feeling the squeeze.

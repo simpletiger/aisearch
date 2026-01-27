@@ -62,19 +62,19 @@ const confidenceColors: Record<string, string> = {
 
 export default function Predictions() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-16 text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="gradient-text">Future Predictions</span>
           </h2>
-          <p className="text-zinc-400 max-w-2xl">
+          <p className="text-zinc-400 max-w-2xl mx-auto">
             What analysts and industry leaders predict for the future of AI search.
             The consensus: this is just the beginning.
           </p>
