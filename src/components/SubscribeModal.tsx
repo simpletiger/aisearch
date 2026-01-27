@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface SubscribeModalProps {
   isOpen: boolean;
@@ -9,6 +9,9 @@ interface SubscribeModalProps {
 }
 
 export default function SubscribeModal({ isOpen, onClose }: SubscribeModalProps) {
+  const [submitted, setSubmitted] = useState(false);
+  const formRef = useRef<HTMLDivElement>(null);
+
   // Close on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -23,6 +26,30 @@ export default function SubscribeModal({ isOpen, onClose }: SubscribeModalProps)
       document.body.style.overflow = "unset";
     };
   }, [isOpen, onClose]);
+
+  // Watch for HubSpot form submission (success message appears)
+  useEffect(() => {
+    if (!isOpen || !formRef.current) return;
+
+    const observer = new MutationObserver(() => {
+      if (formRef.current) {
+        const successEl = formRef.current.querySelector('.submitted-message');
+        if (successEl) {
+          setSubmitted(true);
+        }
+      }
+    });
+
+    observer.observe(formRef.current, { childList: true, subtree: true });
+    return () => observer.disconnect();
+  }, [isOpen]);
+
+  // Reset submitted state when modal closes
+  useEffect(() => {
+    if (!isOpen) {
+      setSubmitted(false);
+    }
+  }, [isOpen]);
 
   return (
     <AnimatePresence>
@@ -45,7 +72,7 @@ export default function SubscribeModal({ isOpen, onClose }: SubscribeModalProps)
             transition={{ duration: 0.2 }}
             className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md mx-4"
           >
-            <div className="bg-[#12121a] border border-zinc-800/50 rounded-2xl p-8 shadow-2xl shadow-black/50">
+            <div className="bg-[#12121a] border border-zinc-800/50 rounded-2xl p-8 shadow-2xl shadow-black/50 relative">
               {/* Close button */}
               <button
                 onClick={onClose}
@@ -56,9 +83,22 @@ export default function SubscribeModal({ isOpen, onClose }: SubscribeModalProps)
                 </svg>
               </button>
 
+              {/* Header - hidden after successful submission */}
+              {!submitted && (
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold gradient-text mb-2">
+                    Stay Ahead of the Shift
+                  </h3>
+                  <p className="text-white text-sm">
+                    Get monthly AI search insights delivered to your inbox. No spam, just data.
+                  </p>
+                </div>
+              )}
+
               {/* HubSpot Form Container */}
               <div 
-                className="hs-form-frame hubspot-form-container" 
+                ref={formRef}
+                className="hs-form-html hubspot-form-container" 
                 data-region="na1" 
                 data-form-id="17388829-1101-4ce2-a09b-c97ae0c9e17f" 
                 data-portal-id="20896464"
