@@ -66,7 +66,7 @@ export default function Hero() {
             onClick={() => setShowSubscribe(true)}
             className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold text-sm hover:from-orange-400 hover:to-amber-400 transition-all shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 cursor-pointer"
           >
-            Subscribe for Updates
+            Subscribe for Monthly Updates
           </button>
 
           <a

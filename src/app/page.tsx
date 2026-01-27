@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import KeyStats from "@/components/KeyStats";
 import Timeline from "@/components/Timeline";
 import Predictions from "@/components/Predictions";
+import SubscribeCTA from "@/components/SubscribeCTA";
 import Sources from "@/components/Sources";
 
 // Dynamic imports for chart components (they use window/DOM)
@@ -66,6 +67,7 @@ export default function Home() {
       <div id="predictions">
         <Predictions />
       </div>
+      <SubscribeCTA />
       <div id="sources">
         <Sources />
       </div>
