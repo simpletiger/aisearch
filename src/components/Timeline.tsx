@@ -15,7 +15,7 @@ export default function Timeline() {
           className="mb-20 text-center"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            <span className="gradient-text">Timeline</span> of the AI Search Revolution
+            <span className="gradient-text">Timeline</span> of the AI Search Report
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
             From ChatGPT&apos;s launch in November 2022 to the reshaping of a

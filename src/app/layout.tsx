@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The AI Search Revolution — Data & Trends",
+  title: "The AI Search Report — Data & Trends",
   description:
     "An interactive data journalism piece exploring the explosive growth of AI search and its impact on the traditional search landscape.",
 };

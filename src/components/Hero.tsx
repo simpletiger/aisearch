@@ -26,7 +26,7 @@ export default function Hero() {
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tight mb-8">
             <span className="gradient-text">The AI Search</span>
             <br />
-            <span className="text-white">Revolution</span>
+            <span className="text-white">Report</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto mb-12 leading-relaxed">
