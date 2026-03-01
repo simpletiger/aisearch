@@ -1,6 +1,6 @@
 // ── ChatGPT Weekly Active Users ──
-// Updated: February 2026
-// Source: DemandSage, TechCrunch
+// Updated: March 2026
+// Source: OpenAI, TechCrunch, Search Engine Land
 export const chatgptUsers = [
   { date: "Jan 2023", users: 50 },
   { date: "Aug 2023", users: 100 },
@@ -9,22 +9,23 @@ export const chatgptUsers = [
   { date: "Dec 2024", users: 300 },
   { date: "Feb 2025", users: 400 },
   { date: "Apr 2025", users: 800 },
-  { date: "Feb 2026", users: 858 },
+  { date: "Feb 2026", users: 900 },
 ];
 
 // ── Multi-platform user growth (MAU in millions) ──
-// Updated: February 2026
+// Updated: March 2026
 export const platformGrowth = [
   { date: "Q4 2023", ChatGPT: 50, Gemini: 7, Claude: 2.9, Perplexity: 2 },
   { date: "Q2 2024", ChatGPT: 150, Gemini: 30, Claude: 5, Perplexity: 8 },
   { date: "Q4 2024", ChatGPT: 300, Gemini: 80, Claude: 10, Perplexity: 15 },
   { date: "Q2 2025", ChatGPT: 600, Gemini: 200, Claude: 19, Perplexity: 30 },
   { date: "Q4 2025", ChatGPT: 858, Gemini: 650, Claude: 30, Perplexity: 45 },
+  { date: "Q1 2026", ChatGPT: 900, Gemini: 750, Claude: 35, Perplexity: 50 },
 ];
 
 // ── Market share over time (% of total digital queries) ──
-// Updated: February 2026
-// Source: First Page Sage Q4 2025 Report
+// Updated: March 2026
+// Source: First Page Sage Feb 2026 Report
 export const marketShare = [
   { date: "Q1 2023", Google: 99, ChatGPT: 0.5, Other: 0.5 },
   { date: "Q4 2023", Google: 97, ChatGPT: 1, Other: 2 },
@@ -32,21 +33,23 @@ export const marketShare = [
   { date: "Q4 2024", Google: 90, ChatGPT: 7, Other: 3 },
   { date: "Q2 2025", Google: 83, ChatGPT: 12, Other: 5 },
   { date: "Q4 2025", Google: 77.9, ChatGPT: 17.1, Other: 5 },
+  { date: "Q1 2026", Google: 76.1, ChatGPT: 18.5, Other: 5.4 },
 ];
 
 // ── Revenue growth (ARR in billions) ──
-// Updated: February 2026
-// Source: CNBC, DemandSage
+// Updated: March 2026
+// Source: CNBC, Reuters, Business Insider
 export const revenueData = [
   { date: "2022", OpenAI: 0.03, Anthropic: 0.01, Perplexity: 0 },
   { date: "2023", OpenAI: 1.0, Anthropic: 0.1, Perplexity: 0.003 },
   { date: "2024", OpenAI: 3.7, Anthropic: 1.0, Perplexity: 0.02 },
-  { date: "2025", OpenAI: 10, Anthropic: 5.0, Perplexity: 0.148 },
-  { date: "2026 (proj)", OpenAI: 20, Anthropic: 8.0, Perplexity: 0.3 },
+  { date: "2025", OpenAI: 20, Anthropic: 10, Perplexity: 0.2 },
+  { date: "2026 (proj)", OpenAI: 26, Anthropic: 14, Perplexity: 0.5 },
 ];
 
 // ── Google AI Overviews presence in search results ──
-// Updated: February 2026
+// Updated: March 2026
+// Source: Conductor 2026 Benchmarks, Search Engine Land
 export const aiOverviewsGrowth = [
   { date: "May 2024", percent: 2 },
   { date: "Sep 2024", percent: 4 },
@@ -55,7 +58,7 @@ export const aiOverviewsGrowth = [
   { date: "Jun 2025", percent: 30 },
   { date: "Sep 2025", percent: 45 },
   { date: "Nov 2025", percent: 60 },
-  { date: "Feb 2026", percent: 65 },
+  { date: "Mar 2026", percent: 68 },
 ];
 
 // ── CTR impact ──
@@ -85,16 +88,16 @@ export const ageData = [
 ];
 
 // ── Key stats ──
-// Updated: February 2026
+// Updated: March 2026
 export const keyStats = [
   {
-    value: "858M",
+    value: "900M",
     label: "ChatGPT Weekly Active Users",
     subtext: "Up from 50M in Jan 2023",
     color: "#6366f1",
   },
   {
-    value: "17.1%",
+    value: "18.5%",
     label: "AI Share of Digital Queries",
     subtext: "Up from <1% in early 2023",
     color: "#8b5cf6",
@@ -106,21 +109,21 @@ export const keyStats = [
     color: "#06b6d4",
   },
   {
-    value: "$10B",
+    value: "$20B",
     label: "OpenAI Annual Revenue",
-    subtext: "Targeting $125B by 2029",
+    subtext: "Targeting $280B by 2030",
     color: "#10b981",
   },
   {
-    value: "65%",
+    value: "68%",
     label: "US Searches with AI Overviews",
-    subtext: "As of February 2026",
+    subtext: "As of March 2026",
     color: "#f59e0b",
   },
   {
-    value: "82%",
-    label: "Gen Z Using AI Chatbots",
-    subtext: "Leading the adoption wave",
+    value: "50M",
+    label: "ChatGPT Paying Subscribers",
+    subtext: "5%+ of weekly active users",
     color: "#ef4444",
   },
 ];
@@ -208,14 +211,26 @@ export const timelineEvents = [
   },
   {
     date: "Feb 2026",
-    title: "ChatGPT Passes 858M Users",
-    description: "ChatGPT continues growth trajectory. AI search commands 17.1% of all digital queries.",
-    icon: "📊",
+    title: "Anthropic Hits $380B Valuation",
+    description: "Anthropic raises $30B at $380B valuation. Run-rate revenue reaches $14B, with Claude Code alone at $2.5B.",
+    icon: "💰",
+  },
+  {
+    date: "Feb 2026",
+    title: "ChatGPT Reaches 900M Users",
+    description: "ChatGPT hits 900M weekly active users, approaching 1B milestone. 50M paying subscribers confirmed.",
+    icon: "🚀",
+  },
+  {
+    date: "Mar 2026",
+    title: "Claude Hits #1 on App Store",
+    description: "Claude reaches #1 on Apple App Store following Anthropic's Pentagon contract stance, with users defecting from ChatGPT.",
+    icon: "📱",
   },
 ];
 
 // ── Sources ──
-// Updated: February 2026
+// Updated: March 2026
 export const sources = [
   { name: "DemandSage — ChatGPT Statistics", url: "https://www.demandsage.com/chatgpt-statistics/" },
   { name: "First Page Sage — Google vs ChatGPT Market Share", url: "https://firstpagesage.com/seo-blog/google-vs-chatgpt-market-share-report/" },
@@ -237,4 +252,11 @@ export const sources = [
   { name: "Digital Bloom — Organic Traffic Crisis", url: "https://thedigitalbloom.com/learn/2025-organic-traffic-crisis-analysis-report/" },
   { name: "Press Gazette — Publisher Traffic Drop", url: "https://pressgazette.co.uk/media-audience-and-business-data/google-traffic-down-2025-trends-report-2026/" },
   { name: "DemandSage — DeepSeek Statistics", url: "https://www.demandsage.com/deepseek-statistics/" },
+  { name: "TechCrunch — ChatGPT 900M Users", url: "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/" },
+  { name: "Reuters — Anthropic $380B Valuation", url: "https://www.reuters.com/technology/anthropic-valued-380-billion-latest-funding-round-2026-02-12/" },
+  { name: "CNBC — Anthropic $30B Funding Round", url: "https://www.cnbc.com/2026/02/12/anthropic-closes-30-billion-funding-round-at-380-billion-valuation.html" },
+  { name: "TechCrunch — Gemini 750M Users", url: "https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/" },
+  { name: "First Page Sage — AI Chatbot Market Share Feb 2026", url: "https://firstpagesage.com/reports/top-generative-ai-chatbots" },
+  { name: "Business Insider — Perplexity Revenue", url: "https://www.businessinsider.com/perplexity-shifts-to-subscriptions-business-growth-2026-2" },
+  { name: "Conductor — 2026 AI Search Benchmarks", url: "https://www.superlines.io/articles/ai-search-statistics/" },
 ];
