@@ -20,7 +20,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <p className="text-sm font-mono tracking-widest uppercase text-orange-400 mb-6">
-            Data Journalism · January 2026
+            Data Journalism · March 2026
           </p>
 
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tight mb-8">
@@ -43,11 +43,11 @@ export default function Hero() {
           >
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
-              800M ChatGPT users
+              900M ChatGPT users
             </span>
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-              17% of all queries
+              18.5% of all queries
             </span>
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse" />
