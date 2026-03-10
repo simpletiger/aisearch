@@ -120,7 +120,7 @@ export default function ImpactSection() {
               AI Overviews in US Search Results
             </h3>
             <p className="text-sm text-zinc-500 mb-6">
-              From 2% to 60% in 18 months
+              From 2% to 68% — as of March 2026
             </p>
             <ResponsiveContainer width="100%" height={300}>
               <AreaChart data={aiOverviewsGrowth} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>

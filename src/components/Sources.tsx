@@ -58,7 +58,7 @@ export default function Sources() {
             Built with Next.js, Tailwind CSS, Recharts & Framer Motion
           </p>
           <p className="text-zinc-600 text-xs font-mono">
-            Data compiled January 2026. All figures cited from public sources.
+            Data compiled March 2026. All figures cited from public sources.
           </p>
         </motion.div>
       </div>

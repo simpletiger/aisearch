@@ -20,7 +20,7 @@ export default function KeyStats() {
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
             Key statistics that capture the scale and speed of AI search&apos;s
-            rise as of late 2025.
+            rise as of March 2026.
           </p>
         </motion.div>
 

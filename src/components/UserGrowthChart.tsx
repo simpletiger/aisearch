@@ -45,8 +45,8 @@ export default function UserGrowthChart() {
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
             Monthly active users (millions) for the major AI search platforms.
-            ChatGPT leads but Gemini is closing the gap fast with 650M total users
-            by late 2025.
+            ChatGPT leads with 900M weekly users, while Gemini has surged to 750M
+            as of early 2026.
           </p>
         </motion.div>
 

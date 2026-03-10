@@ -44,8 +44,8 @@ export default function RevenueChart() {
             The <span className="gradient-text">Money</span> Behind AI Search
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
-            Annual recurring revenue (in billions). OpenAI went from $1B to $20B in just
-            two years. Anthropic&apos;s run-rate hit $5B+ by August 2025.
+            Annual recurring revenue (in billions). OpenAI hit $20B ARR targeting $280B by 2030.
+            Anthropic reached $14B ARR at a $380B valuation in February 2026.
           </p>
         </motion.div>
 
@@ -76,8 +76,8 @@ export default function RevenueChart() {
         {/* Valuation callouts */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
           {[
-            { company: "OpenAI", valuation: "$300B+", detail: "After $40B raise, Mar 2025", color: "#6366f1" },
-            { company: "Anthropic", valuation: "$350B", detail: "Planned raise, Jan 2026", color: "#f59e0b" },
+            { company: "OpenAI", valuation: "$300B+", detail: "$20B ARR, targeting $280B by 2030", color: "#6366f1" },
+            { company: "Anthropic", valuation: "$380B", detail: "$30B raise, Feb 2026", color: "#f59e0b" },
             { company: "Perplexity", valuation: "$18-28B", detail: "$915M total funding", color: "#10b981" },
           ].map((item, i) => (
             <motion.div

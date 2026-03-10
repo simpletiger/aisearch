@@ -47,7 +47,7 @@ export default function MarketShareChart() {
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
             Google&apos;s search market share fell below 90% for the first time since 2015
-            in Q4 2024. By Q4 2025, ChatGPT alone commands 17% of all digital queries.
+            in Q4 2024. By Q1 2026, AI commands 18.5% of all queries — Google hits an all-time low of 76.1%.
           </p>
         </motion.div>
 
